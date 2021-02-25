@@ -1,9 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_sign_in/services/auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
   final AuthService _auth = AuthService();
@@ -26,6 +23,7 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
+      //TODO implement home screen
       body: Container(),
     );
   }

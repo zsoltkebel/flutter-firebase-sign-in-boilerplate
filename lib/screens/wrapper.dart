@@ -7,12 +7,9 @@ import 'package:provider/provider.dart';
 class Wrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     final user = Provider.of<User>(context);
-    print(user);
+    //print(user);
 
-    //TODO remove line below
-    // return screen.Create();
     if (user == null) {
       return Authenticate();
     } else {

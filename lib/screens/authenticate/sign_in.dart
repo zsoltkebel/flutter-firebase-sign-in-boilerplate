@@ -30,7 +30,6 @@ class _SignInState extends State<SignIn> {
             appBar: AppBar(
               backgroundColor: Colors.grey[50],
               elevation: 0.0,
-              brightness: Brightness.light,
               title: Text('Sign in', style: TextStyle(color: Colors.black87)),
               actions: [
                 FlatButton.icon(
@@ -73,10 +72,7 @@ class _SignInState extends State<SignIn> {
                       height: 20.0,
                     ),
                     ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.pink[400], // background
-                        onPrimary: Colors.white, // foreground
-                      ),
+                      style: elevatedButtonStyle,
                       child: Text(
                         'Sign In',
                         style: TextStyle(color: Colors.white),
@@ -96,11 +92,11 @@ class _SignInState extends State<SignIn> {
                         }
                       },
                     ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
                     ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.pink[400], // background
-                        onPrimary: Colors.white, // foreground
-                      ),
+                      style: elevatedButtonStyle,
                       onPressed: () async {
                         if (_formKey.currentState.validate()) {
                           setState(() => loading = true);
