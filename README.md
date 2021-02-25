@@ -22,8 +22,8 @@ flutter_spinkit: ^4.1.2
 Add the following to your .gitignore file:
 ```
 # Firebase related
-ios/GoogleService-Info.plist
-android/app/google-services.json
+GoogleService-Info.plist
+google-services.json
 ```
 
 `ios/Podfile`
